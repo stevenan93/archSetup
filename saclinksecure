@@ -1,0 +1,18 @@
+Description='SacLinkSecure'
+Interface=wlp3s0
+Connection=wireless
+Security=wpa-configsection
+IP=dhcp
+WPAConfigSection=(
+    'ssid="SacLinkSecure"'
+    'key_mgmt=WPA-EAP'
+    'eap=PEAP'
+    'proto=RSN'
+    'pairwise=CCMP'
+    'identity="stevenan"'
+    'password="secret"'
+    'priority=1'
+    'phase2="auth=MSCHAPV2"'
+)
+
+
